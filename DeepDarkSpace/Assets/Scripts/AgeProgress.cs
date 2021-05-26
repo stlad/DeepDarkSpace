@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class AgeProgress : MonoBehaviour
 {
     public GameObject ParentOfProgress;
-
+    
     void Start()
     {
         

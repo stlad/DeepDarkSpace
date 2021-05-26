@@ -31,4 +31,9 @@ public class LevelButton : MonoBehaviour
         
     }
     public void SetCompleted() => IsComplete = true;
+
+    private void OnMouseDown()
+    {
+        
+    }
 }
