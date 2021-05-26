@@ -16,6 +16,7 @@ public class LevelButton : MonoBehaviour
     private Text text;
     public GameTypes GameType;
     public bool IsComplete = false;
+    public int LevelId;
 
     // Start is called before the first frame update
     void Start()
@@ -29,4 +30,5 @@ public class LevelButton : MonoBehaviour
     {
         
     }
+    public void SetCompleted() => IsComplete = true;
 }
