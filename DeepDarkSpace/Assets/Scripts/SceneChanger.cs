@@ -5,10 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    public int Id;
-
-    public void ChangeScene()
+    private void ChangeScene()
     {
-        SceneManager.LoadScene($"level{Id}");
+        var levelType = CurrentCondition.LevelType;
+        switch ((int)levelType)
+        {
+            case 1:
+                SceneManager.LoadScene(1);
+                break;
+            default:
+                Debug.Log("CannotLoad");
+                break;
+        }
     }
+
+
+    public void LoadScene(int id)
+    {
+        SceneManager.LoadScene(id);
+    }
+
+
 }

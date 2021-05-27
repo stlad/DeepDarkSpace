@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ProgressBar : MonoBehaviour
 {
     public GameObject ParentOfProgress;
+    public GameObject Progress;
     public float maxValue => GetCurrentMax();
     public float Speed;
     void Start()
@@ -14,6 +15,7 @@ public class ProgressBar : MonoBehaviour
 
     void Update()
     {
+
         var fillProgress = gameObject.GetComponent<Image>().fillAmount;
         //Debug.Log($"max  {GetCurrentMax()}");
         if (fillProgress < GetCurrentMax()) 
@@ -23,6 +25,7 @@ public class ProgressBar : MonoBehaviour
     private float GetCurrentMax()
     {
         var parentScript = ParentOfProgress.GetComponent<AgeMenu>();
-        return (float)parentScript.CompletedLevelsAmount/ parentScript.Buttons.Count;
+        var count = Progress.GetComponent<AgeProgress>().CompletedLevelsCount;
+        return (float)count/ parentScript.Buttons.Count;
     }
 }

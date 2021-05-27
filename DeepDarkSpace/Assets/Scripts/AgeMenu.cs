@@ -4,12 +4,17 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Хранит информацию об временной эпохе (меню)
 public class AgeMenu : MonoBehaviour
 {
     [SerializeField] 
     public List<GameObject> Buttons;
-    public Text NameOfAge;
+    //public Text NameOfAge;
     public int CompletedLevelsAmount => GetCompletedAmount();
+
+
+    public CurrentCondition.AgeTypes AgeType;
+
     void Start()
     {
         //Buttons.AddRange(transform.Get())
@@ -17,8 +22,8 @@ public class AgeMenu : MonoBehaviour
         {
             if (child.gameObject.GetComponent<LevelButton>() != null)
                 Buttons.Add(child.gameObject);
-            else
-                NameOfAge = child.gameObject.GetComponent<Text>();
+            //else
+            //    NameOfAge = child.gameObject.GetComponent<Text>();
         }
     }
 

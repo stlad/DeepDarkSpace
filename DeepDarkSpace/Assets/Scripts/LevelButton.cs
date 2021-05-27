@@ -5,35 +5,23 @@ using UnityEngine.UI;
 
 public class LevelButton : MonoBehaviour
 {
-
-    public enum GameTypes
-    {
-        Game,
-        Theory,
-        Test
-    }
-
-    private Text text;
-    public GameTypes GameType;
+    public CurrentCondition.LevelTypes LevelType;
     public bool IsComplete = false;
     public int LevelId;
 
-    // Start is called before the first frame update
+
     void Start()
     {
         var t = transform.Find("Text").GetComponent<Text>();
-        t.text = GameType.ToString(); 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        t.text = LevelType.ToString();
+        Debug.Log($"{(int)LevelType}");
     }
     public void SetCompleted() => IsComplete = true;
 
-    private void OnMouseDown()
+    public void ChangeCurrentCondition()
     {
-        
+        CurrentCondition.AgeType = gameObject.GetComponentInParent<AgeMenu>().AgeType;
+        CurrentCondition.LevelId = LevelId;
+        CurrentCondition.LevelType = LevelType;
     }
 }
