@@ -9,7 +9,7 @@ public class AgeMenu : MonoBehaviour
 {
     [SerializeField] 
     public List<GameObject> Buttons;
-    //public Text NameOfAge;
+    public GameObject LevelDirectory;
     public int CompletedLevelsAmount => GetCompletedAmount();
 
 
@@ -17,10 +17,11 @@ public class AgeMenu : MonoBehaviour
 
     void Start()
     {
+        //var levels = gameObject.transform.Find("Levels").transform.Find();
         //Buttons.AddRange(transform.Get())
-        foreach(Transform child in transform)
+        foreach(Transform child in LevelDirectory.transform)
         {
-            if (child.gameObject.GetComponent<LevelButton>() != null)
+            if (child.gameObject.GetComponent<LevelPanel>() != null)
                 Buttons.Add(child.gameObject);
             //else
             //    NameOfAge = child.gameObject.GetComponent<Text>();

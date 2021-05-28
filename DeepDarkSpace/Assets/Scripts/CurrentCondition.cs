@@ -27,7 +27,7 @@ public class CurrentCondition : MonoBehaviour
 
     public static AgeTypes AgeType = AgeTypes.Ancient;
     public static LevelTypes LevelType = LevelTypes.Theory;
-    public static int LevelId = 1;
+    public static int LevelId = 0;
 
     public static HashSet<Tuple<AgeTypes, int>> CompletedLevels = new HashSet<Tuple<AgeTypes, int>>();
 
