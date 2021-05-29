@@ -42,4 +42,9 @@ public class CurrentCondition : MonoBehaviour
         Debug.Log($"{tuple.ToString()} {CompletedLevels.Count}");
         CompletedLevels.Add(tuple);
     }
+
+    public void SetNextLevel()
+    {
+        LevelId++;
+    }
 }

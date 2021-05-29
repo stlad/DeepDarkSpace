@@ -25,5 +25,10 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene(id);
     }
 
+    public void LoadSceneFromCurrentCondition()
+    {
+        SceneManager.LoadScene((int)CurrentCondition.LevelType);
+    }
+
 
 }
