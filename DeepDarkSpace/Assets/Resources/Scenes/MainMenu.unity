@@ -3267,12 +3267,12 @@ PrefabInstance:
     - target: {fileID: 2697204243208614363, guid: 2839be408016e9d4b9b6e0e4291c6986,
         type: 3}
       propertyPath: LevelId
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2697204243208614363, guid: 2839be408016e9d4b9b6e0e4291c6986,
         type: 3}
       propertyPath: LevelType
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2697204244930119574, guid: 2839be408016e9d4b9b6e0e4291c6986,
         type: 3}
