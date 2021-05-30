@@ -30,7 +30,7 @@ public class CurrentCondition : MonoBehaviour
     public static int LevelId = 0;
 
     public static HashSet<Tuple<AgeTypes, int>> CompletedLevels = new HashSet<Tuple<AgeTypes, int>>();
-
+    public static HashSet<Tuple<int, LevelTypes, AgeTypes>> AllLevels = new HashSet<Tuple<int, LevelTypes, AgeTypes>>();
     public static string GetFullLevelId()
     {
         return $"{(int)AgeType}_{LevelId}";

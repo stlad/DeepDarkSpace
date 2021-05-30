@@ -8,6 +8,7 @@ public class TestTextParser : MonoBehaviour
 {
     public GameObject Question;
     public List<GameObject> Answers;
+    public readonly int TestLevelCount;
     void Start()
     {
         var text = (TextAsset)Resources.Load($"{CurrentCondition.AgeType}_{CurrentCondition.LevelType}");

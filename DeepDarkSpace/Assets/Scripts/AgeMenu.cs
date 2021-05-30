@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -17,14 +18,14 @@ public class AgeMenu : MonoBehaviour
 
     void Start()
     {
-        //var levels = gameObject.transform.Find("Levels").transform.Find();
-        //Buttons.AddRange(transform.Get())
         foreach(Transform child in LevelDirectory.transform)
         {
-            if (child.gameObject.GetComponent<LevelPanel>() != null)
+            var levelPanel = child.gameObject.GetComponent<LevelPanel>();
+            if ( levelPanel != null)
+            {
                 Buttons.Add(child.gameObject);
-            //else
-            //    NameOfAge = child.gameObject.GetComponent<Text>();
+                CurrentCondition.AllLevels.Add(Tuple.Create(levelPanel.LevelId, levelPanel.LevelType, AgeType));
+            }
         }
     }
 
