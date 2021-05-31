@@ -16,6 +16,6 @@ public class Edge : MonoBehaviour
         line.SetPositions(pos.ToArray());
         Instantiate(line);
         var state = gameObject.GetComponentInParent<GameState>();
-        state.GetComponent<GameState>().Edges.Add(gameObject);
+        //state.GetComponent<GameState>().Edges.Add(gameObject);
     }
 }

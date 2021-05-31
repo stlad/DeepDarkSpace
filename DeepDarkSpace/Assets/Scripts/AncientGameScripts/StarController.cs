@@ -12,7 +12,6 @@ public class StarController : MonoBehaviour
         var state = gameObject.GetComponentInParent<GameState>();
         if (IsActive) state.Add(gameObject);
         else state.Remove(gameObject);
-        Debug.Log("!!!");
     }
 
     private void Update()
