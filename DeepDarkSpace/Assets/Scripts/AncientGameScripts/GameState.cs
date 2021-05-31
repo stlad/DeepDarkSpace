@@ -40,7 +40,6 @@ public class GameState : MonoBehaviour
         pos.Add(ActiveStars[0].transform.position);
         pos.Add(ActiveStars[1].transform.position);
         edge.GetComponent<LineRenderer>().SetPositions(pos.ToArray());
-
         Edges.Add(edge);
     }
 }

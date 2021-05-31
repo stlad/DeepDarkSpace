@@ -5,6 +5,7 @@ using UnityEngine;
 public class StarController : MonoBehaviour
 {
     public bool IsActive = false;
+    public int Id;
     private void OnMouseDown()
     {
         IsActive = !IsActive;

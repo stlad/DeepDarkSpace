@@ -43,4 +43,9 @@ public class SceneChanger : MonoBehaviour
         CurrentCondition.LevelType = type.Item2;
         SceneManager.LoadScene((int)type.Item2);
     }
+
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
