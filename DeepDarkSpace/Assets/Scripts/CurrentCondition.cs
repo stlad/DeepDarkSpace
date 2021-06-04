@@ -14,8 +14,9 @@ public class CurrentCondition : MonoBehaviour
         None = 0,
         Theory = 1,
         Test = 2,
-        Game = 3 ,
-        Menu = 4
+        ConstellationGame = 3,
+        NavigationGame = 4,
+        Menu = 5
     }
     public enum AgeTypes
     {
