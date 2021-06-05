@@ -6,10 +6,10 @@ public class SkyObject : MonoBehaviour
 {
     public bool IsActive;
     public int Id;
-    public GameObject Sky;
+    public GameObject Telescope;
     void Update()
     {
-        if (Sky.GetComponent<ShipController>().ActiveStar == gameObject)
+        if (Telescope.GetComponent<TelescopeController>().ActiveSkyObject == gameObject)
         {
             IsActive = true;
             gameObject.GetComponent<SpriteRenderer>().color = Color.green;

@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/Scenes/NavigationGame.unity
     guid: 16f882294f5c13c41b0f32bdd7499ca6
+  - enabled: 1
+    path: Assets/Resources/Scenes/TelescopeGame.unity
+    guid: 57c40fe2d40e6124f8baba96547f4012
   m_configObjects: {}

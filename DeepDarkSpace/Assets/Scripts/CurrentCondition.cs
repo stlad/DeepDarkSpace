@@ -16,7 +16,8 @@ public class CurrentCondition : MonoBehaviour
         Test = 2,
         ConstellationGame = 3,
         NavigationGame = 4,
-        Menu = 5
+        TelescopeGame = 5,
+        Menu = 6
     }
     public enum AgeTypes
     {
