@@ -2,21 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NavigationStarController : MonoBehaviour
+public class SkyObject : MonoBehaviour
 {
-    public bool IsActive = false;
+    public bool IsActive;
     public int Id;
-    public GameObject Ship;
-    public static HashSet<GameObject> Stars = new HashSet<GameObject>();
-    void Start()
-    {
-        Stars.Add(gameObject);
-    }
-
-    // Update is called once per frame
+    public GameObject Sky;
     void Update()
     {
-        if (Ship.GetComponent<ShipController>().ActiveStar == gameObject)
+        if (Sky.GetComponent<ShipController>().ActiveStar == gameObject)
         {
             IsActive = true;
             gameObject.GetComponent<SpriteRenderer>().color = Color.green;
