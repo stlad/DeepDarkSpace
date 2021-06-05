@@ -5,15 +5,26 @@ using UnityEngine;
 public class NavigationStarController : MonoBehaviour
 {
     public bool IsActive = false;
+    public int Id;
+    public GameObject Compass;
+    public static HashSet<GameObject> Stars = new HashSet<GameObject>();
     void Start()
     {
-        
+        Stars.Add(gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (IsActive) gameObject.GetComponent<SpriteRenderer>().color = Color.green;
-        else gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+        if (Compass.GetComponent<ShipController>().ActiveStar == gameObject)
+        {
+            IsActive = true;
+            gameObject.GetComponent<SpriteRenderer>().color = Color.green;
+        }
+        else
+        {
+            IsActive = false;
+            gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+        }
     }
 }
