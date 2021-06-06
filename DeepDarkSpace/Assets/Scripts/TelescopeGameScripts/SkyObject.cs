@@ -7,12 +7,14 @@ public class SkyObject : MonoBehaviour
     public bool IsActive;
     public int Id;
     public GameObject Telescope;
+    public string Description;
     void Update()
     {
         if (Telescope.GetComponent<TelescopeController>().ActiveSkyObject == gameObject)
         {
             IsActive = true;
             gameObject.GetComponent<SpriteRenderer>().color = Color.green;
+            //Telescope.GetComponent<TelescopeController>().DescriptionPanel.GetComponent<Text>().text = Description;
         }
         else
         {

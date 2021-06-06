@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TelescopeController : MonoBehaviour
 {
-    public GameObject ActiveSkyObject; 
+    public GameObject ActiveSkyObject;
+    public GameObject DescriptionPanel;
     private void Update()
     {
         var crosshair = transform.Find("Crosshair");
@@ -22,5 +24,8 @@ public class TelescopeController : MonoBehaviour
                 ActiveSkyObject = hit.transform.gameObject;
             }
         }
+        if (ActiveSkyObject != null)
+            DescriptionPanel.GetComponent<Text>().text = ActiveSkyObject.GetComponent<SkyObject>().Description;
+        else DescriptionPanel.GetComponent<Text>().text = "...";
     }
 }
