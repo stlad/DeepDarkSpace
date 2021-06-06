@@ -12,12 +12,12 @@ public class CurrentCondition : MonoBehaviour
     public enum LevelTypes
     {
         None = 0,
-        Theory = 1,
-        Test = 2,
-        ConstellationGame = 3,
-        NavigationGame = 4,
-        TelescopeGame = 5,
-        Menu = 6
+        Menu = 1,
+        Theory = 2,
+        Test = 3,
+        ConstellationGame = 4,
+        NavigationGame = 5,
+        TelescopeGame = 6,
     }
     public enum AgeTypes
     {

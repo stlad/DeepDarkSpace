@@ -184,7 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsActive: 0
   Id: 1
-  Compass: {fileID: 1592628561}
+  Ship: {fileID: 0}
 --- !u!212 &118673981
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -341,7 +341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsActive: 0
   Id: 3
-  Compass: {fileID: 1592628561}
+  Ship: {fileID: 0}
 --- !u!212 &698793635
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -455,7 +455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsActive: 0
   Id: 0
-  Compass: {fileID: 1592628561}
+  Ship: {fileID: 0}
 --- !u!212 &787182237
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -569,7 +569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsActive: 0
   Id: 2
-  Compass: {fileID: 1592628561}
+  Ship: {fileID: 0}
 --- !u!212 &829892668
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -818,7 +818,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
