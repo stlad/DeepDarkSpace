@@ -9,6 +9,7 @@ public class CurrectAnswers : MonoBehaviour
     public static Dictionary<int, HashSet<int>> CurrectEdges = new Dictionary<int, HashSet<int>>();
     public GameObject Game;
     public GameObject CurrentCond;
+    public GameObject NextLevelButton;
     //созвездие большрй медведицы
     private void Start()
     {
@@ -43,6 +44,7 @@ public class CurrectAnswers : MonoBehaviour
         {
             gameObject.GetComponent<Image>().color = Color.green;
             CurrentCond.GetComponent<CurrentCondition>().SetLevelCompleted();
+            NextLevelButton.SetActive(true);
         }
         else gameObject.GetComponent<Image>().color = Color.red;
     }

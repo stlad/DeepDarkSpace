@@ -37,7 +37,7 @@ public class SceneChanger : MonoBehaviour
         var type = CurrentCondition.AllLevels.Where(n => n.Item1 == CurrentCondition.LevelId).FirstOrDefault();
         if (type == null)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
             return;
         }
         CurrentCondition.LevelType = type.Item2;

@@ -8,6 +8,7 @@ public class AnswerButton : MonoBehaviour
     public  bool IsCorrect;
     public bool IsClicked = false;
     public GameObject CurrentCond;
+    public GameObject NextLevelButton;
     
     void Start()
     {
@@ -16,7 +17,10 @@ public class AnswerButton : MonoBehaviour
         {
             IsClicked = true;
             if (IsCorrect)
-                CurrentCond.GetComponent<CurrentCondition>().SetLevelCompleted(); 
+            {
+                CurrentCond.GetComponent<CurrentCondition>().SetLevelCompleted();
+                NextLevelButton.SetActive(true);
+            }
         });
     }
 

@@ -7,6 +7,7 @@ public class CheckButton : MonoBehaviour
 {
     public GameObject Ship;
     public GameObject CurrentCondition;
+    public GameObject NextLevelButton;
     public int CorrectStarId;
     public void CheckCorrection()
     {
@@ -16,6 +17,8 @@ public class CheckButton : MonoBehaviour
         {
             gameObject.GetComponent<Image>().color = Color.green;
             CurrentCondition.GetComponent<CurrentCondition>().SetLevelCompleted();
+            NextLevelButton.SetActive(true);
+
         }
         else gameObject.GetComponent<Image>().color = Color.red;
     }

@@ -333,6 +333,11 @@ PrefabInstance:
       propertyPath: CurrentCond
       value: 
       objectReference: {fileID: 1462012836}
+    - target: {fileID: 1724185992056040764, guid: 4e90a02c797f5f0499065ecc0b361b21,
+        type: 3}
+      propertyPath: NextLevelButton
+      value: 
+      objectReference: {fileID: 1414350890}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e90a02c797f5f0499065ecc0b361b21, type: 3}
 --- !u!224 &317645177 stripped
@@ -681,6 +686,11 @@ PrefabInstance:
       propertyPath: CurrentCond
       value: 
       objectReference: {fileID: 1462012836}
+    - target: {fileID: 1724185992056040764, guid: 4e90a02c797f5f0499065ecc0b361b21,
+        type: 3}
+      propertyPath: NextLevelButton
+      value: 
+      objectReference: {fileID: 1414350890}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e90a02c797f5f0499065ecc0b361b21, type: 3}
 --- !u!224 &886754196 stripped
@@ -935,7 +945,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1414350891
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1420,6 +1430,11 @@ PrefabInstance:
       propertyPath: CurrentCond
       value: 
       objectReference: {fileID: 1462012836}
+    - target: {fileID: 1724185992056040764, guid: 4e90a02c797f5f0499065ecc0b361b21,
+        type: 3}
+      propertyPath: NextLevelButton
+      value: 
+      objectReference: {fileID: 1414350890}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e90a02c797f5f0499065ecc0b361b21, type: 3}
 --- !u!224 &1986407157 stripped
@@ -1622,5 +1637,10 @@ PrefabInstance:
       propertyPath: CurrentCond
       value: 
       objectReference: {fileID: 1462012836}
+    - target: {fileID: 1724185992056040764, guid: 4e90a02c797f5f0499065ecc0b361b21,
+        type: 3}
+      propertyPath: NextLevelButton
+      value: 
+      objectReference: {fileID: 1414350890}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e90a02c797f5f0499065ecc0b361b21, type: 3}
