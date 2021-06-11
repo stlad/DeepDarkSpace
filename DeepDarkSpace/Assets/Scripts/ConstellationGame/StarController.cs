@@ -16,7 +16,7 @@ public class StarController : MonoBehaviour
 
     private void Update()
     {
-        if (IsActive) gameObject.GetComponent<SpriteRenderer>().color = Color.green;
+        if (IsActive) gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
         else gameObject.GetComponent<SpriteRenderer>().color = Color.white;
     }
 }
