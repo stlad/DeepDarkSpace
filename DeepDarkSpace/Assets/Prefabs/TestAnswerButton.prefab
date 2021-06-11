@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 0.92549026, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -135,6 +135,7 @@ MonoBehaviour:
   IsCorrect: 0
   IsClicked: 0
   CurrentCond: {fileID: 0}
+  NextLevelButton: {fileID: 0}
 --- !u!1 &1724185992632094888
 GameObject:
   m_ObjectHideFlags: 0
