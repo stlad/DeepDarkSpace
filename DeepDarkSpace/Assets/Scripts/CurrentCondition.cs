@@ -49,4 +49,23 @@ public class CurrentCondition : MonoBehaviour
     {
         LevelId++;
     }
+
+    public static string ConvertLevelTypeToString(LevelTypes type)
+    {
+        switch (type)
+        {
+            case LevelTypes.Test:
+                return "Тест";
+            case LevelTypes.Theory:
+                return "Теория";
+            case LevelTypes.ConstellationGame:
+                return "Игра";
+            case LevelTypes.NavigationGame:
+                return "Игра";
+            case LevelTypes.TelescopeGame:
+                return "Игра";
+            default: return "";
+        }
+
+    }
 }
