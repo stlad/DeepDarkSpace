@@ -793,8 +793,8 @@ PrefabInstance:
     - target: {fileID: 7022706405021948476, guid: 19ee475d3b3376341811f507e483653a,
         type: 3}
       propertyPath: m_Text
-      value: "\u0418\u0441\u0442\u043E\u0440\u0438\u044F \u0441\u0440\u0435\u0434\u043D\u0438\u0445
-        \u0432\u0435\u043A\u043E\u0432"
+      value: "\u0418\u0441\u0442\u043E\u0440\u0438\u044F \u0430\u0441\u0442\u0440\u043E\u043D\u043E\u043C\u0438\u0438
+        \u0441\u0440\u0435\u0434\u043D\u0438\u0445 \u0432\u0435\u043A\u043E\u0432"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19ee475d3b3376341811f507e483653a, type: 3}
@@ -3225,6 +3225,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2839be408016e9d4b9b6e0e4291c6986, type: 3}
+--- !u!1 &1515881681 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7022706403535820965, guid: 19ee475d3b3376341811f507e483653a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1426121128}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1603509642
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4549,7 +4555,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1515881681}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
