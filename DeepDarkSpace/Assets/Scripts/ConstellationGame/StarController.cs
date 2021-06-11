@@ -6,6 +6,8 @@ public class StarController : MonoBehaviour
 {
     public bool IsActive = false;
     public int Id;
+    public Sprite NotActiveSprite;
+    public Sprite ActiveSprite;
     private void OnMouseDown()
     {
         IsActive = !IsActive;
@@ -16,7 +18,9 @@ public class StarController : MonoBehaviour
 
     private void Update()
     {
-        if (IsActive) gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
-        else gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+        //if (IsActive) gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
+        //else gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+        if (IsActive) gameObject.GetComponent<SpriteRenderer>().sprite = ActiveSprite;
+        else gameObject.GetComponent<SpriteRenderer>().sprite = NotActiveSprite;
     }
 }
