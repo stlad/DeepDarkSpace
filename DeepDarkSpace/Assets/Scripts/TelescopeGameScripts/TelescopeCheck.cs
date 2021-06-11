@@ -7,12 +7,12 @@ public class TelescopeCheck : MonoBehaviour
 {
     public GameObject CurrentCondition;
     public GameObject Telescope;
-    public int CorrectId;
+    public GameObject CorrectObject;
 
     public void CheckCompletion()
     {
-        var answer = Telescope.GetComponent<TelescopeController>().ActiveSkyObject.GetComponent<SkyObject>().Id;
-        if (CorrectId == answer)
+        var answer = Telescope.GetComponent<TelescopeController>().ActiveSkyObject.GetComponent<SkyObject>();
+        if (CorrectObject.GetComponent<SkyObject>() == answer || answer !=null)
         {
             gameObject.GetComponent<Image>().color = Color.green;
             CurrentCondition.GetComponent<CurrentCondition>().SetLevelCompleted();
