@@ -8,12 +8,12 @@ public class CheckButton : MonoBehaviour
     public GameObject Ship;
     public GameObject CurrentCondition;
     public GameObject NextLevelButton;
-    public int CorrectStarId;
+    public GameObject CorrectStar;
     public void CheckCorrection()
     {
-        var activeStar = Ship.GetComponent<ShipController>().ActiveStar;
-        var id = activeStar.GetComponent<NavigationStarController>().Id;
-        if (id == CorrectStarId)
+        var activeStar = Ship.GetComponent<ShipController>().ActiveStar.GetComponent<NavigationStarController>();
+        var correct = CorrectStar.GetComponent<NavigationStarController>();
+        if (activeStar == correct)
         {
             gameObject.GetComponent<Image>().color = Color.green;
             CurrentCondition.GetComponent<CurrentCondition>().SetLevelCompleted();

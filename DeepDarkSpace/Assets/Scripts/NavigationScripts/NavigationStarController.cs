@@ -19,7 +19,7 @@ public class NavigationStarController : MonoBehaviour
         if (Ship.GetComponent<ShipController>().ActiveStar == gameObject)
         {
             IsActive = true;
-            gameObject.GetComponent<SpriteRenderer>().color = Color.gray;
+            gameObject.GetComponent<SpriteRenderer>().color = Color.grey;
         }
         else
         {

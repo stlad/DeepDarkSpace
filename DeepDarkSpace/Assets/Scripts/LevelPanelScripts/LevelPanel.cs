@@ -15,7 +15,7 @@ public class LevelPanel : MonoBehaviour
     private void Start()
     {
         var idField = gameObject.transform.Find("Id").GetComponent<Text>();
-        idField.text = LevelId.ToString();
+        idField.text = (LevelId+1).ToString();
 
         var typeField = gameObject.transform.Find("TypeOfLevel").GetComponent<Text>();
         typeField.text = LevelType.ToString();
