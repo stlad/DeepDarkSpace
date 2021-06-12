@@ -9,6 +9,8 @@ public class LevelPanel : MonoBehaviour
     public CurrentCondition CurrentCondition;
     public CurrentCondition.AgeTypes AgeType;
     public CurrentCondition.LevelTypes LevelType;
+    public Sprite NotCompletedSprite;
+    public Sprite CompletedSprite;
     public int LevelId;
     public bool IsCompleted => CheckLevelCompletion();
 
@@ -26,8 +28,8 @@ public class LevelPanel : MonoBehaviour
         // монипуляции со спрайтом: можно менять
         var complete = gameObject.transform.Find("IsCompleteImage").GetComponent<Image>();
 
-        if (IsCompleted) complete.color = Color.green;
-        else complete.color = Color.red;
+        if (IsCompleted) complete.sprite = CompletedSprite;
+        else complete.sprite = NotCompletedSprite;
     }
     private bool CheckLevelCompletion()
     {

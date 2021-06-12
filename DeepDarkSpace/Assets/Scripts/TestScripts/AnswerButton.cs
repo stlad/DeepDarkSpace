@@ -9,6 +9,9 @@ public class AnswerButton : MonoBehaviour
     public bool IsClicked = false;
     public GameObject CurrentCond;
     public GameObject NextLevelButton;
+
+    public Sprite TrueSprite;
+    public Sprite FalseSprite;
     
     void Start()
     {
@@ -30,9 +33,9 @@ public class AnswerButton : MonoBehaviour
         if (IsClicked)
         {
             if (IsCorrect)
-                gameObject.GetComponent<Image>().color = Color.green;
+                gameObject.GetComponent<Image>().sprite = TrueSprite;
             else
-                gameObject.GetComponent<Image>().color = Color.red;
+                gameObject.GetComponent<Image>().sprite = FalseSprite;
         }
     }
     

@@ -8,6 +8,8 @@ public class NavigationStarController : MonoBehaviour
     public int Id;
     public GameObject Ship;
     public static HashSet<GameObject> Stars = new HashSet<GameObject>();
+    public Sprite ActiveSprite;
+    public Sprite NotActiveSprtie;
     void Start()
     {
         Stars.Add(gameObject);
@@ -19,12 +21,12 @@ public class NavigationStarController : MonoBehaviour
         if (Ship.GetComponent<ShipController>().ActiveStar == gameObject)
         {
             IsActive = true;
-            gameObject.GetComponent<SpriteRenderer>().color = Color.grey;
+            gameObject.GetComponent<SpriteRenderer>().sprite = ActiveSprite;
         }
         else
         {
             IsActive = false;
-            gameObject.GetComponent<SpriteRenderer>().color = Color.black;
+            gameObject.GetComponent<SpriteRenderer>().sprite = NotActiveSprtie;
         }
     }
 }
