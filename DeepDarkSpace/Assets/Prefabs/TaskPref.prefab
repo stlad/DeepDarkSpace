@@ -105,8 +105,8 @@ Transform:
   m_LocalPosition: {x: 80.490295, y: 48.997314, z: -31027.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4612750424227814852}
   - {fileID: 4612750424250285538}
+  - {fileID: 4612750424227814852}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9607844, g: 0.9333334, b: 0.80392164, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -431,7 +431,7 @@ RectTransform:
   - {fileID: 4612750425099346160}
   - {fileID: 4612750424023398790}
   m_Father: {fileID: 4612750423155516458}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -508,7 +508,7 @@ RectTransform:
   m_Children:
   - {fileID: 4612750423046455755}
   m_Father: {fileID: 4612750423155516458}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -621,6 +621,8 @@ MonoBehaviour:
   Game: {fileID: 0}
   CurrentCond: {fileID: 0}
   NextLevelButton: {fileID: 0}
+  CorrectSprite: {fileID: 0}
+  InCorrectSprite: {fileID: 0}
 --- !u!1 &4612750425099346161
 GameObject:
   m_ObjectHideFlags: 0

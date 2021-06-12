@@ -10,6 +10,8 @@ public class CurrectAnswers : MonoBehaviour
     public GameObject Game;
     public GameObject CurrentCond;
     public GameObject NextLevelButton;
+    public Sprite CorrectSprite;
+    public Sprite InCorrectSprite;
     private void Start()
     {
         //созвездие большрй медведицы
@@ -60,10 +62,10 @@ public class CurrectAnswers : MonoBehaviour
     {
         if (CheckCurrection())
         {
-            gameObject.GetComponent<Image>().color = Color.green;
+            gameObject.GetComponent<Image>().sprite = CorrectSprite;
             CurrentCond.GetComponent<CurrentCondition>().SetLevelCompleted();
             NextLevelButton.SetActive(true);
         }
-        else gameObject.GetComponent<Image>().color = Color.red;
+        else gameObject.GetComponent<Image>().sprite = InCorrectSprite;
     }
 }
